@@ -1,0 +1,130 @@
+/* ---------- WEDDING POST ----------*/
+.wedding-post {
+	background-color: #fff;
+}
+
+.wedding-title {
+	background-color: #1c285b;
+	padding: 19px 0 14px;
+
+	.title {
+		color: rgb(255, 255, 255);
+		font-size: 35px;
+		font-family: "FuturaLightBT";
+		padding-left: 4px;
+		text-align: left;
+		text-transform: uppercase;
+	}
+}
+
+.wedding-descr {
+	color: rgb(120, 120, 120);
+	float: left;
+	font-family: "LucidaGrande";
+	font-size: 13px;
+	line-height: 1.538;
+	padding-left: 4px;
+	padding-top: 62px;
+	text-align: justify;
+	width: 43%;
+
+	.txt {
+		margin-bottom: 20px;
+	}
+
+	.attention {
+		color: #2c3565;
+		font-family: "LucidaGrandeBold";
+	}
+}
+
+.wedding-slider-wrapper {
+	float: right;
+	margin-top: -133px;
+	position: relative;
+	text-align: right;
+	right: -5px;
+	width: 53.7%;
+}
+
+.wedding-slider {
+	background: #fff;
+	overflow: hidden;
+	max-height: 567px;
+	padding: 9px;
+	position: relative;
+	text-align: left;
+}
+
+.wedding-slide-img {
+	.img {
+		max-width: 100%;
+		margin: auto;
+	}
+}
+
+.slick-dots {
+	display: inline-block;
+	margin-right: 8px;
+	margin-top: 6px;
+
+	li {
+		background-color: #e2ddd8;
+		border-radius: 50%;
+		float: left;
+		margin-right: 8px;
+		height: 11px;
+		width: 11px;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	.slick-active {
+		background-color: #1c285b;
+	}
+
+	button {
+		display: none;
+	}
+}
+
+.slick-arrow {
+	background: #fff;
+	cursor: pointer;
+	height: 57px;
+	width: 57px;
+	position: absolute;
+	top: 48.2%;
+	transform: rotate(45deg) translate(0, -50%);
+	z-index: 1;
+	&:hover {
+		&::before {
+			border-color: #1c285b;
+		}
+	}
+	&.slick-prev {
+		left: -40px;
+
+		&::before{
+			top: 18%;
+			right: 10px;
+			transform: skew(20deg) rotate(-167deg);
+		}
+	}
+	&.slick-next {
+		right: 0;
+	}
+
+	&::before {
+		content: '';
+		border-top: 1px solid #5d5d5d;
+		border-right: 1px solid #5d5d5d;
+		height: 21px;
+		width: 20px;
+		position: absolute;
+		top: 44%;
+		right: 25px;
+		transform: skew(20deg) rotate(13deg);
+	}
+}
